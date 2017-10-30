@@ -10,11 +10,20 @@ private:
 	string id;
 	string course_title;
 public:
-	void set_course_title(string);
-	string get_course_title();
-	void set_id(string);
-	string get_id();
+	///info:
+	///Constructors.
 	Subject();
 	Subject(string course_title1, string id1);
 	Subject(const Subject &object);
+
+	///info:
+	///Setters.
+	void set_course_title(string);
+	void set_id(string);
+
+	///info:
+	///Gettters.
+	string get_course_title();
+	string get_id();
+
 };
