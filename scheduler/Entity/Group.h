@@ -10,19 +10,19 @@ class Group {
 	string name; //(ÏÌ²-11)
 public:
 
-	//info:
-	//Constructors.
+	///info:
+	///Constructors.
 	Group();
 	Group(string n, string i);
 	Group(const Group& obj);
 
-	//info:
-	//Setters.
+	///info:
+	///Setters.
 	void set_name(string);
 	void set_id(string);
 
-	//info:
-	//Getters.
+	///info:
+	///Getters.
 	string get_name();
 	string get_id();
 };
