@@ -2,7 +2,7 @@
 #include <direct.h>
 #include <string>
 #include <fstream>
-#include "Subject.h"
+#include "../Entity/Subject.h"
 
 using namespace std;
 

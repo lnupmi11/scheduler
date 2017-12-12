@@ -1,5 +1,5 @@
 #pragma once
-#include "Group.h"
+#include "../Entity/Group.h"
 #include <direct.h>
 #include <fstream>
 #include <string>
