@@ -2,15 +2,16 @@
 
 bool Login::check_login(string login, string password) {
 	ifstream in("Users.txt");
-	string cheker;
+	string cheker1, cheker2;
 	if (in.is_open()) {
 		while (!in.eof()) {
-			getline(in, cheker);
-			if (cheker == login && cheker == password) {
+			getline(in, cheker1);
+			getline(in, cheker2);
+			if (cheker1 == login && cheker2 == password) {
 				in.close();
 				return true;
 			}
-			if (cheker == "") {
+			if (cheker1 == "") {
 				in.close();
 				return false;
 			}
