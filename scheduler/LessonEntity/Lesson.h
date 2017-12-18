@@ -15,6 +15,7 @@ private:
 public:
 	Lesson(): number(0), group(), subject() {}
 	Lesson(int n, string ng, string ig, string ct, string is): number(n), group(ng, ig), subject(ct, is) {}
+	Lesson(int n, Group g, Subject s): number(n), group(g.get_name(), g.get_id()), subject(s.get_course_title(), s.get_id()) {}
 	Lesson(const Lesson &obj)
 	{
 		number = obj.number;
